@@ -1,0 +1,106 @@
+html, body {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Segoe-UI';
+    src: url("./font/Segoe-UI.woff") format("woff");
+}
+@font-face {
+    font-family: 'Segoe-UI-Bold-Italic';
+    src: url("./font/Segoe-UI-Bold-Italic.woff") format("woff");
+}
+@font-face {
+    font-family: 'Segoe-UI-Bold';
+    src: url("./font/Segoe-UI-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: 'Segoe-UI-Italic';
+    src: url("./font/Segoe-UI-Italic.woff") format("woff");
+}
+
+.bold-Segoe {
+    font-family:'Segoe-UI-Bold';
+    color: #212529;
+}
+.reg-Segoe {
+    font-family:'Segoe-UI';
+    color: #212529;
+}
+.Ita-Segoe {
+    font-family: 'Segoe-UI-Italic';
+    color: #212529;
+}
+.Bold-Ita-Segoe {
+    font-family: 'Segoe-UI-Bold-Italic';
+    color: #212529;
+}
+
+
+.fs-08 {
+    font-size: 0.87rem;
+}
+.fs-1 {
+    font-size: 1rem;
+
+}
+.fs-2 {
+    font-size: 2rem;
+}
+.fs-3 {
+    font-size: 3rem;
+}
+
+.fw-400{
+    font-weight: 400;
+}
+
+.fw-700{
+    font-weight: 700;
+    font-family: "Segoe-UI-Bold";
+}
+
+.error{
+    color: #DC3545;
+}
+
+.content {
+    color: #6C757D;
+}
+
+@media (max-width: 992px) {
+    .fs-08 {
+        font-size: 0.75rem;
+    }
+    .fs-1 {
+        font-size: 0.8rem;
+    
+    }
+    .fs-2 {
+        font-size: 1.7rem;
+    }
+    .fs-3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .fs-08 {
+        font-size: 0.625rem;
+    }
+    .fs-1 {
+        font-size: 0.725rem;
+    
+    }
+    .fs-2 {
+        font-size: 1.45rem;
+    }
+    .fs-3 {
+        font-size: 2.15rem;
+    }
+}

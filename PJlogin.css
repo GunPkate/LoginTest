@@ -1,0 +1,68 @@
+.icon-show-password{
+  position: absolute;
+  top: 36%;
+  right: 7%;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.carousel-indicators li {
+  height: 8px !important;
+  width: 8px !important;
+  border-radius: 50%;
+  transform: translateY(-2rem);
+}
+
+.w-30{
+  max-height: 65px;
+}
+
+@media (max-width: 992px) {
+  .carousel-indicators li {
+    transform: translateY(3rem);
+    background-color: #DEE2E6 !important;
+    opacity: 1 !important;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #006488 !important;
+  }
+  
+  .Welcome{
+    margin-top: 4rem !important;
+  }
+  
+  .icon-show-password {
+    top: 34%;
+    right: 5%;
+  }
+
+  .carousel-item img{
+    max-height: 370px;
+  }
+}
+
+@media (max-width: 576px) {
+  
+  .mt-5{
+    margin-top: 2.5rem !important;
+  }
+  
+  .Welcome{
+    margin-top: 3.5rem !important;
+  }
+  
+  .icon-show-password {
+    top: 35%;
+    right: 8%;
+  }
+
+  .carousel-item img{
+    max-height: 160px;
+  }   
+
+  /* .content{
+    word-wrap: break-word;
+    white-space: pre-line;
+  } */
+}

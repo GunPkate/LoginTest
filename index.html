@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="application">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="PJlogin.css">
+    <link rel="stylesheet" href="font.css">
+</head>
+<body>
+    <div class="container-fluid px-0">
+        <div class="row align-self-center">
+            <div class="col-lg-5" ng-controller="slide-cltr" ng-init="onInit()">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators" id="indicator">
+                            <li ng-repeat="image in images" ng-class="{'active': $first}" data-target="#demo"  data-slide-to="{{$index}}"></li>
+                        </ol>
+                        
+                        <!-- The slideshow -->
+                        <div class="carousel-inner no-padding" id="slide_courosel">
+                            <div ng-repeat="image in images" ng-class="{'active': $first}" class="carousel-item " >
+                                <a href="{{image.link}}" target="_blank">
+                                    <!-- <img ng-if="pc" src="{{image.pc}}" class="w-100" style="height: 100vh;"> -->
+                                    <img ng-if="pc" src="{{image.pc}}"  class="w-100" style="height: 100vh;">
+                                    <!-- <img ng-if="tablet || mobile" src="{{image.mobile}}" class="w-100" style="height: 100vh;"> -->
+                                    <img ng-if="tablet || mobile" src="{{image.mobile}}" class="align-self-center"  class="w-100" style="height: 100vh;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-7 align-self-center">
+                <div class="row justify-content-center">   
+
+                    <div class="col-7">
+                        <div class="row">
+                            <div class="col-12 text-center Welcome">
+                                <div class="fs-2 fw-700 .bold-Segoe ">Welcome Back</div>
+                                <div class="fs-08 reg-Segoe">Login to your account</div>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <div class="fs-1 fw-700 .bold-Segoe ">Username</div>
+                                <input type="text"  class="form-control" placeholder="Username">
+                                <p class="fs-08 fw-400 error reg-Segoe">Username is required</p>
+                            </div>
+                            <div class="col-12 position-relative">
+                                <div class="fs-1 fw-700 .bold-Segoe ">Password</div>
+                                <input type="password" id="txt_password" class="form-control" style="background-color: #E9ECEF;" autocomplete="off">
+                                <i class="fa fa-eye icon-show-password" id="show" onclick="myFunction()"></i>
+                                <i class="fa fa-eye-slash icon-show-password" id="hide" onclick="myFunction()"></i>
+                                <p class="fs-08 fw-400 error reg-Segoe">Email or Password is invalid!</p>  
+                            </div>
+                            <div class="col-12 mt-5">
+                                <button class="btn-primary w-100 reg-Segoe">Login</button>
+                            </div>
+                            <div class="col-12 text-center my-4">
+                            <!-- <div class="col-lg-8 col-md-4 col-sm-6 col-7 mt-3 mb-3">               -->
+                                <img class="w-30" src="./icons/Logo.png" alt="Second slide">
+                            </div>
+                            <div class="col-12 text-center fs-08 content reg-Segoe">
+                                "ซอฟต์แวร์นี้เขียนขึ้นหรือพัฒนาโดยบริษัท บิลค์ วัน กรุ๊ป จำกัด 
+                                ซึ่งมีเลขที่ประจำตัวซอฟต์แวร์เฮ้าส์เลขที่ <span class="bold-Segoe">0553</span> 
+                                เป็นซอฟต์แวร์เลขที่ <span class="bold-Segoe">PJM-2</span> และเป็นซอฟต์แวร์ตามมาตรฐาน
+                                ซอฟต์แวร์เพื่อภาษีสรรพากรของกรมสรรพากร ชนิด ข."
+                            </div>
+                            <div class="col-12 text-center fs-08 reg-Segoe text-primary">
+                                Version 2.41.00-cf80497! MS-19142 2021-12-21 10:55
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
